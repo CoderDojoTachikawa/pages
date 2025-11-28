@@ -1,5 +1,11 @@
+_includes
+_layouts
+_sass
 _site
+.bundle
+.git
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
 vendor
+assets
