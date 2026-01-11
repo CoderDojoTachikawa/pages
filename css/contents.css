@@ -1,0 +1,714 @@
+/*******************************************
+*
+* css for TOPページ
+*
+********************************************/
+
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 1.6rem;
+	font-weight:700;
+	line-height:155%;
+	background-color:#12b8b7;
+}
+
+b,strong{
+	font-weight:700;
+}
+
+a{
+	text-decoration:none;
+}
+
+.noPC{
+	display:none;
+}
+
+
+/*
+	width:min(calc(100% - 8vw),1024px);
+*/
+
+/* for SP --------------------------*/
+
+@media screen and ( max-width:768px) {
+
+	.noPC{
+		display:initial;
+	}
+
+	.noSP{
+		display:none;
+	}
+
+}
+
+
+/* ==========================================================
+*
+* あああああ
+*
+========================================================== */
+
+#wrapper{
+	display:block;
+	min-height:100vh;
+	background: url('../images/title_bg.webp') no-repeat 50% 0;
+	background-size: contain;
+}
+
+#wrapper > section{
+	/*position:sticky;
+	top:0;*/
+}
+
+
+h1{
+	display:block;
+	overflow:hidden;
+	text-align:center;
+	letter-spacing:-.4em;
+	padding:20px 4vw 0;
+}
+
+h1 > span{
+	display:block;
+	overflow:hidden;
+	margin-bottom:10px;
+}
+
+h1 > span > img{
+	width:min(100%,538px);
+	height:auto;
+}
+
+h1 > img{
+	height:auto;
+	vertical-align:middle;
+	position:relative;
+}
+h1 > img:nth-child(2){
+	width:min(100%,482px);
+}
+
+h1 > img:nth-child(3){
+	width:min(100%,423px);
+}
+
+
+.dkTxt{
+	display:inline-block;
+	overflow:hidden;
+	width: calk(100% - 220px);
+	position:relative;
+	vertical-align:top;
+}
+
+a.dkLink{
+	display:inline-block;
+	overflow:hidden;
+	width:min(100%,220px);
+	padding:4px 4px;
+	background-color:#FFFFFF;
+	line-height:100%;
+	border:1px solid #CCCCCC;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	-webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+	box-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+}
+
+a.dkLink img{
+	width:100%;
+	height:auto;
+}
+
+a.dkLink:hover{
+	filter:brightness(1.75);
+}
+
+
+.dkTxt + a.dkLink{
+	margin-left:1em;
+}
+
+
+
+/* for SP --------------------------*/
+@media screen and ( max-width:920px) {
+
+	#wrapper{
+		background-position:50% 10vw;
+		background-size: 110vw auto;
+	}
+
+}
+
+
+@media screen and ( max-width:768px) {
+
+	/*#wrapper{
+		padding-top:0;
+		background:unset;
+		background-position:50% 10vw;
+		background-size: 110vw auto;
+	}*/
+
+	#wrapper > section{
+		position:relative;
+		top:0;
+	}
+
+
+	h1{
+		padding: 4vw 4vw 0;
+	}
+
+	.dkTxt{
+		display:block;
+		width:initial;
+	}
+
+	a.dkLink{
+		margin-top:0.5em;
+	}
+
+
+	.dkTxt + a.dkLink{
+		margin-left:0;
+	}
+
+
+}
+
+
+/* for SP --------------------------*/
+@media screen and ( max-width:640px) {
+
+	#wrapper{
+		background:unset;
+		/*
+		background-position:-20vw 0,right -4vw;
+		background-size: 50vw auto;
+		*/
+	}
+}
+
+
+
+/*------------------------------------------
+ DoderDojoってなに？
+ ------------------------------------------*/
+#about{
+	display:block;
+	overflow:hidden;
+	width:min(calc(100% - 8vw),1024px);
+	margin:20px auto 0;
+	background-color: #FFFFFF;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+
+#about::before{
+	content:"";
+	display:block;
+	overflow:hidden;
+	width: 100%;
+	height:40px;
+	background:#C3c3c3 url("../images/dots.svg") no-repeat 10px 50%;
+	background-size:auto 20px;
+}
+
+#about .content_body{
+	display:block;
+	overflow:hidden;
+	padding:20px 30px 30px;
+	font-size:1.6rem;
+	line-height:155%;
+	position:relative;
+	text-align:center;
+	letter-spacing: -.4em;
+}
+
+#about .content_body > article{
+	display:inline-block;
+	overflow:hidden;
+	width: calc(100% - 392px);
+	text-align:left;
+	letter-spacing:normal;
+	position:relative;
+	vertical-align:bottom;
+}
+
+
+#about .content_body h2{
+	display:block;
+	overflow:hidden;
+	padding:10px 0 25px;
+	background:url('../images/hedline_01b.png') no-repeat bottom right;
+	background-size:contain;
+}
+
+#about .content_body h2 > img{
+	width: min(100%,648px);
+	height:auto;
+}
+
+#about .content_body p{
+	display:block;
+	overflow:hidden;
+	font-size: 2.1rem;
+	font-weight:900;
+	line-height:155%;
+}
+
+#about .content_body p + p{
+	margin-top:0.5em;
+}
+
+
+
+#about .content_body > img{
+	width:min(100%,392px);
+	position:relative;
+	vertical-align:bottom;
+}
+
+
+/* for SP --------------------------*/
+
+@media screen and ( max-width:900px) {
+
+	#about .content_body > article{
+		display:block;
+		width: 100%;
+	}
+
+}
+
+
+@media screen and ( max-width:768px) {
+	
+	#about{
+		margin:4vw auto 0;
+	}
+
+
+	#about::before{
+		height:40px;
+	}
+
+	#about .content_body{
+		display:block;
+		overflow:hidden;
+		padding:2vw 4vw 4vw;
+		font-size:1.6rem;
+		line-height:155%;
+		position:relative;
+	}
+
+
+
+
+	#about .content_body h2{
+		display:block;
+		overflow:hidden;
+	}
+
+	#about .content_body h2 > img{
+		width: min(100%,648px);
+		height:auto;
+	}
+
+	#about .content_body p{
+		font-size: 1.6rem;
+		font-weight:900;
+		line-height:155%;
+	}
+
+}
+
+
+/*------------------------------------------
+ こんなことをやってるよ
+ ------------------------------------------*/
+#activity{
+	display:block;
+	margin-top:95px;
+}
+
+
+#activity .content_body{
+	display:block;
+	padding-bottom:30px;
+	background-color:#FFFFFF;
+}
+
+
+#activity .content_body h2,
+#activity .content_body ul{
+	width:min(calc(100% - 8vw),1024px);
+	margin:0 auto;
+}
+
+#activity h2{
+	display:block;
+	/*overflow: hidden;*/
+	position: relative;
+}
+
+#activity h2 > img{
+	width: min(100%,832px);
+	height:auto;
+	margin-top:-65px;
+}
+
+
+#activity ul{
+	display:flex;
+	justify-content:center;
+	gap:0 10px;
+}
+
+#activity ul > li{
+	text-align: center;
+}
+
+#activity ul > li img{
+	width:min(100%,284px);
+	height:auto;
+}
+
+
+#activity ul + p{
+	display:block;
+	overflow:hidden;
+	margin-top:0.5em;
+	font-size:2.8rem;
+	font-weight:900;
+	line-height:155%;
+	text-align:center;
+	color:#12b8b7;
+}
+
+
+/* for SP --------------------------*/
+
+@media screen and ( max-width:768px) {
+		
+	#activity{
+		margin-top:65px;
+	}
+
+
+	#activity .content_body{
+		padding-bottom:4vw;
+	}
+
+
+	#activity h2{
+		width:100%;
+		padding:0 0;
+	}
+
+	#activity h2 > img{
+		margin-top:-65px;
+	}
+
+
+	#activity ul{
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:center;
+		gap:0 0;
+	}
+
+	#activity ul > li{
+		width:50%;
+	}
+
+
+	#activity ul + p{
+		font-size:2.0rem;
+		line-height:155%;
+	}
+
+}
+
+
+/*------------------------------------------
+ 参加要項
+ ------------------------------------------*/
+#points{
+	display:block;
+	/*overflow:hidden;*/
+	position:sticky;
+	top:0;
+}
+
+
+
+#points .content_body{
+	display:block;
+	width:min(100%,1024px);
+	padding:30px 0 50px;
+	margin:0 auto;
+	position:relative;
+	background-color:#12b8b7;
+}
+
+#points .content_body::before{
+	content:"";
+	display: inline-block;
+	width: 50px;
+	height: 80px;
+	background: #FFFFFF;
+	clip-path: polygon(0 0, 100% 0%, 0% 100%);
+	position:absolute;
+	top:-7px;
+	left:max(200px,calc(50% - 380px));
+	transform: rotate(10deg);
+	z-index:10;
+}
+
+
+
+#points .content_body > img:nth-child(1){
+	width:400px;
+	height:auto;
+	position:absolute;
+	bottom:20px;
+	left:-125px;
+	/*left:calc(50% - 700px);*/
+}
+#points .content_body > img:nth-child(3){
+	width: min(100%,256px);
+	height:auto;
+	position:absolute;
+	top:100px;
+	right:0;
+}
+
+#points .content_body article{
+	display:block;
+	overflow:hidden;
+	margin:0 auto;
+	width:min(100%,640px);
+}
+
+#points h2{
+	display:block;
+	overflow:hidden;
+	padding-bottom:30px;
+	text-align:center;
+}
+
+#points h2 > img{
+	width:min(100%,408px);
+	height:auto;
+}
+
+
+
+#points dl{
+	display:block;
+	overflow:hidden;
+	font-size:1.8rem;
+	line-height:155%;
+	text-align:left;
+	position:relative;
+}
+
+#points dl > dt{
+	width:7em;
+	clear:both;
+}
+
+#points dl > dt,
+#points dl > dd{
+	display:block;
+	overflow:hidden;
+	float:left;
+}
+
+#points dl > dt > span{
+	display:block;
+	overflow:hidden;
+	width:6em;
+	font-weight:900;
+	color:#7E3967;
+	text-align:center;
+	-webkit-border-radius:20px;
+	border-radius: 20px;
+	background-color:#FFFFFF;
+}
+
+#points dl > dd{
+	width:calc(100% - 7em);
+	color:#FFFFFF;
+	padding-bottom:0.5em;
+	margin-bottom:0.5em;
+	border-bottom:1px solid #FFFFFF;
+}
+
+
+/* for SP --------------------------*/
+
+@media screen and ( max-width:768px) {
+
+	#points .content_body{
+		padding:4vw 4vw 4vw;
+		text-align:center;
+	}
+
+	#points .content_body::before{
+		display:none;
+	}
+
+	#points .content_body > img:nth-child(1){
+		display:none;
+	}
+
+	#points .content_body > img:nth-child(3){
+		position:relative;
+		top:auto;
+		right:auto;
+	}
+
+	#points .content_body article{
+		width:100%;
+	}
+
+	#points h2{
+		padding-bottom:4vw;
+	}
+
+
+	#points dl{
+		font-size:1.6rem;
+		line-height:155%;
+	}
+
+}
+
+
+
+/*------------------------------------------
+ ボランティア募集
+ ------------------------------------------*/
+#volunteer{
+	display:block;
+	overflow:hidden;
+	padding:50px 0;
+	background-color:#FFFFFF;
+	position:sticky;
+	top:0;
+}
+
+#volunteer > .content_body{
+	display:block;
+	overflow:hidden;
+	width:min(calc(100% - 8vw),1024px);
+	margin:0 auto;
+	background:url('../images/bg02_b.webp') no-repeat 50% 50%;
+	background-size:contain;
+}
+
+#volunteer > .content_body > article{
+	display:block;
+	overflow:hidden;
+	margin-top:2em;
+}
+
+#volunteer h2{
+	display:block;
+	overflow:hidden;
+	margin-bottom:20px;
+}
+
+#volunteer h2 img{
+	width:min(100%,554px);
+	height:auto;
+}
+
+
+#volunteer h3{
+	display:block;
+	overflow:hidden;
+	margin-bottom:0.5em;
+}
+
+
+
+#volunteer h3 > span{
+	display:block;
+	overflow:hidden;
+	padding:0.25em 0;
+	width:12em;
+	font-size:2.1rem;
+	font-weight:900;
+	line-height:155%;
+	color:#FFFFFF;
+	text-align:center;
+	-webkit-border-radius:20px;
+	border-radius: 20px;
+	background-color:#000000;
+}
+
+#volunteer ul{
+	list-style-type: disc;
+	margin-left:1.5em;
+}
+
+
+#volunteer ul > li{
+	
+}
+
+
+/* for SP --------------------------*/
+@media screen and ( max-width:768px) {
+	
+	#volunteer{
+		padding:8vw 0;
+	}
+
+	#volunteer > .content_body{
+		background-position:50% 0;
+	}
+
+
+	#volunteer > .content_body > article{
+		display:block;
+		overflow:hidden;
+		margin-top:8vw;
+	}
+
+
+	#volunteer h3 > span{
+		width:100%;
+		font-size:2.1rem;
+		line-height:155%;
+	}
+
+}
+
+
+
+footer{
+	display:block;
+	overflow:hidden;
+	padding:0.5em 0;
+	font-size:1.4rem;
+	line-height: 125%;
+	text-align: center;
+}
+
