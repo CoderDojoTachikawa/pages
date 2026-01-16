@@ -275,7 +275,6 @@ a.dkLink:hover{
 }
 
 
-
 #about .content_body > img{
 	width:min(100%,392px);
 	position:relative;
@@ -316,8 +315,6 @@ a.dkLink:hover{
 	}
 
 
-
-
 	#about .content_body h2{
 		display:block;
 		overflow:hidden;
@@ -332,6 +329,10 @@ a.dkLink:hover{
 		font-size: 1.6rem;
 		font-weight:900;
 		line-height:155%;
+	}
+
+	#about .content_body > img{
+		margin-top:1em;
 	}
 
 }
