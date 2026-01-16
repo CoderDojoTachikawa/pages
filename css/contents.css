@@ -714,6 +714,11 @@ a.dkLink:hover{
 		padding:0.5em 0 0.5em 1.0em;
 		text-indent:-1.0em;
 	}
+
+	#schedule .content_body > ul > li > a span.ttl{
+		display:block;
+		text-indent:0;
+	}
 }
 
 
