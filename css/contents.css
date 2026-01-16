@@ -450,8 +450,8 @@ a.dkLink:hover{
 #points{
 	display:block;
 	/*overflow:hidden;*/
-	position:sticky;
-	top:0;
+	/*position:sticky;
+	top:0;*/
 }
 
 
@@ -561,7 +561,6 @@ a.dkLink:hover{
 
 
 /* for SP --------------------------*/
-
 @media screen and ( max-width:768px) {
 
 	#points .content_body{
@@ -598,6 +597,125 @@ a.dkLink:hover{
 	}
 
 }
+
+
+
+
+/*------------------------------------------
+ 開催スケジュール
+ ------------------------------------------*/
+#schedule{
+	display:block;
+	overflow:hidden;
+	/*position:sticky;
+	top:0;*/
+}
+
+#schedule .content_body{
+	display:block;
+	width:min(100%,1024px);
+	padding:30px 0 50px;
+	margin:0 auto 30px;
+	padding:20px 20px;
+	position:relative;
+	background-color:#FFFFFF;
+	border:4px solid #FFFFFF;
+	border-radius:15px;
+
+	-webkit-box-shadow: 8px 8px 0 rgb(174 221 235);
+	box-shadow: 8px 8px 0 rgb(174 221 235);
+}
+
+
+#schedule .content_body h2{
+	display:block;
+	overflow:hidden;
+	margin-bottom:0.5em;
+	font-size: 2.4rem;
+	font-weight:900;
+	line-height:155%;
+	color:#7E3967;
+}
+
+
+#schedule .content_body > ul{
+	display:block;
+	overflow:hidden;
+	font-size:1.8rem;
+	line-height:155%;
+	border-top: 2px dotted #CCCCCC;
+}
+
+#schedule .content_body > ul > li{
+	display:block;
+	overflow:hidden;
+	border-bottom: 2px dotted #CCCCCC;
+}
+
+
+#schedule .content_body > ul > li > a{
+	display:block;
+	overflow:hidden;
+	padding:0.5em 0 0.5em 1.5em;
+	text-indent:-1.0em;
+	color:#333333;
+	position:relative;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+#schedule .content_body > ul > li > a::before{
+	content:"\25B6";
+	color:#7E3967;
+}
+
+#schedule .content_body > ul > li > a:hover{
+	background-color:#2fb8b7;
+	color:#FFFFFF;
+}
+
+#schedule .content_body > ul > li > a > span{
+	margin-left:0.5em;
+}
+
+
+
+/* for SP --------------------------*/
+@media screen and ( max-width:768px) {
+
+	#schedule{
+		padding:0 6vw 0 4vw;
+	}
+
+	#schedule .content_body{
+		padding:4vw 4vw;
+		position:relative;
+		background-color:#FFFFFF;
+		border:4px solid #FFFFFF;
+		border-radius:15px;
+
+		-webkit-box-shadow: 8px 8px 0 rgb(174 221 235);
+		box-shadow: 8px 8px 0 rgb(174 221 235);
+	}
+
+
+	#schedule .content_body h2{
+		font-size: 2.4rem;
+		line-height:155%;
+	}
+
+
+	#schedule .content_body > ul{
+		font-size:1.6rem;
+		line-height:155%;
+	}
+
+	#schedule .content_body > ul > li > a{
+		padding:0.5em 0 0.5em 1.0em;
+		text-indent:-1.0em;
+	}
+}
+
 
 
 
