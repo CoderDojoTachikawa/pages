@@ -18,12 +18,10 @@ const ACCESS_TOKEN = 'E-sA4pMjtZ8_Ntq-vzba';
 const GROUP_NAME = 'coderdojotachikawa';
 
 
-https://coderdojotachikawa.doorkeeper.jp/events/193553
-
-
 const fetchUpcomingEvents = async () =>{
 	const xToday = new Date().toISOString().split('T')[0];
 	const xUrl = `https://api.doorkeeper.jp/groups/coderdojotachikawa/events?since=${xToday}`;
+	console.log("get event",xUrl);
 
 	try {
 		const response = await fetch(xUrl, {
