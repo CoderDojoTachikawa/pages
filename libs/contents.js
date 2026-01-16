@@ -12,7 +12,7 @@ $(function(){
 });
 
 
-const initContent = () =>{
+const initContent = async () =>{
 
 	await fetchUpcomingEvents();
 
