@@ -13,6 +13,9 @@ group :jekyll_plugins do
   # Remote theme plugin: pin to 0.4.3 to avoid `configure_sass` NoMethodError
   gem "jekyll-remote-theme", "~> 0.4.3"
 
+  # Generate sitemap.xml for search engines
+  gem "jekyll-sitemap", "~> 1.4"
+
   # Use the modern Sass converter (v3+) which relies on sass-embedded
   gem "jekyll-sass-converter", "~> 3.0"
 end

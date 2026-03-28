@@ -21,9 +21,7 @@
 title: CoderDojo 立川
 email: coderdojo.tachikawa@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  東京都立川市近郊の子どもと子育て世代に向けた、無料のプログラミング・Minecraft・ものづくりコミュニティです。
 baseurl: "/pages" # the subpath of your site, e.g. /blog
 url: "https://coderdojotachikawa.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  CoderDojoTachikawa
@@ -36,6 +34,7 @@ remote_theme: coderdojotachikawa/pages-theme@main
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -46,13 +45,8 @@ plugins:
 # their entries' file path in the `include:` list.
 #
 # exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - README.md
+  - serve.sh
+  - test.html
+  - vendor/

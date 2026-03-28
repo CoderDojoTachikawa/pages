@@ -17,6 +17,20 @@ body {
 	background-color:#12b8b7;
 }
 
+.seo_intro{
+	display:block;
+	width:min(calc(100% - 8vw),1024px);
+	margin:18px auto 0;
+	padding:18px 22px;
+	font-size:1.8rem;
+	font-weight:700;
+	line-height:170%;
+	color:#FFFFFF;
+	background:rgba(0,0,0,0.18);
+	border-radius:10px;
+	text-align:center;
+}
+
 b,strong{
 	font-weight:700;
 }
@@ -37,6 +51,13 @@ a{
 /* for SP --------------------------*/
 
 @media screen and ( max-width:768px) {
+
+	.seo_intro{
+		margin:4vw auto 0;
+		padding:14px 16px;
+		font-size:1.5rem;
+		line-height:165%;
+	}
 
 	.noPC{
 		display:initial;
@@ -400,6 +421,16 @@ a.dkLink:hover{
 	color:#12b8b7;
 }
 
+#activity .activity_note{
+	width:min(calc(100% - 8vw),860px);
+	margin:1.2em auto 0;
+	font-size:1.8rem;
+	line-height:170%;
+	font-weight:700;
+	color:#222222;
+	text-align:center;
+}
+
 
 /* for SP --------------------------*/
 
@@ -440,6 +471,11 @@ a.dkLink:hover{
 	#activity ul + p{
 		font-size:2.0rem;
 		line-height:155%;
+	}
+
+	#activity .activity_note{
+		font-size:1.5rem;
+		line-height:165%;
 	}
 
 }
