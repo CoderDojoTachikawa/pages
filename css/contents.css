@@ -1011,3 +1011,14 @@ footer{
 	text-align: center;
 }
 
+.footer_sitemap{
+	font-size:1.6rem;
+	font-weight:700;
+	margin-bottom:0.3em;
+}
+
+.footer_sitemap a{
+	color:#ffffff;
+	text-decoration:underline;
+}
+
