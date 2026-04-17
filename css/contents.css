@@ -1000,6 +1000,92 @@ a.dkLink:hover{
 
 }
 
+/*------------------------------------------
+ ブログ・SNS・スポンサー
+ ------------------------------------------*/
+#community_links{
+	display:block;
+	padding:24px 0 30px;
+	background:linear-gradient(180deg,#dff7f6 0%,#ffffff 100%);
+}
+
+#community_links .content_body{
+	width:min(calc(100% - 8vw),1024px);
+	margin:0 auto;
+	padding:24px;
+	background:#ffffff;
+	border-radius:16px;
+	box-shadow:8px 8px 0 rgba(18,184,183,0.2);
+}
+
+#community_links h2{
+	margin-bottom:0.7em;
+	font-size:2.4rem;
+	line-height:145%;
+	font-weight:900;
+	color:#7E3967;
+}
+
+#community_links h2 + ul{
+	margin-bottom:1.6em;
+}
+
+#community_links ul{
+	display:grid;
+	grid-template-columns:repeat(2,minmax(0,1fr));
+	gap:12px;
+	list-style:none;
+	margin-left:0;
+}
+
+#community_links li{
+	display:block;
+}
+
+#community_links a{
+	display:block;
+	padding:14px 16px;
+	font-size:1.7rem;
+	line-height:155%;
+	font-weight:700;
+	color:#0f3030;
+	background:#f4fefe;
+	border:2px solid #12b8b7;
+	border-radius:12px;
+	transition:all 0.25s ease-out;
+}
+
+#community_links a:hover{
+	color:#ffffff;
+	background:#12b8b7;
+}
+
+@media screen and ( max-width:768px) {
+
+	#community_links{
+		padding:4vw 0 6vw;
+	}
+
+	#community_links .content_body{
+		padding:16px;
+	}
+
+	#community_links h2{
+		font-size:2.0rem;
+	}
+
+	#community_links ul{
+		grid-template-columns:1fr;
+	}
+
+	#community_links a{
+		font-size:1.5rem;
+		line-height:165%;
+	}
+
+}
+
+
 
 
 footer{
